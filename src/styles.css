@@ -23,17 +23,18 @@
     display: flex;
 }
 .SignUp, .LogIn{
-    font-family: 'Inter';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 55px;
     line-height: 24px;
     border-color: #10701a;
-    background: rgba(186, 236, 188, 0.33);
+    background: rgba(186, 236, 188, 0.722);
     border: none;
     padding: 8px;
     width: 50%;
     height: 70px;
+    color: white;
 }
 
 .SignUp{
@@ -43,15 +44,15 @@
     border-radius: 0px 10px 0px 0px;
 }
 .LogIn:hover,  .SignUp:hover{
-    background-color: rgba(140, 188, 142, 0.73);
+    background-color: rgba(98, 133, 99, 0.756);
     border: #10701aa0;
 }
 .btnSelected{
-    background-color: rgba(98, 133, 99, 0.73) !important;
+    background-color: rgba(98, 133, 99, 0.756) !important;
     border: #10701aa0;
 }
 .mainSignUp, .mainLogIn{
-    background: rgba(169, 219, 171, 0.59);
+    background: rgba(169, 219, 171, 0.844);
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -74,13 +75,14 @@ input{
     font-size: 40px;
     line-height: 30px;
     height: 60px;
+    margin-left: 5%;
 }
 .LogInBtn, .createAccount, .googleBtn{
     background: rgba(103, 177, 110, 0.65);
     border: 3px solid #67B16E;
     border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
     font-weight: 600;
     font-size: 45px;
     line-height: 12px;
@@ -107,7 +109,7 @@ input{
     align-self: center;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 25px;
     line-height: 21px;
     text-align: center;
@@ -226,7 +228,7 @@ footer{
     position: absolute;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 20px;
     line-height: 24px;
     left: 25%;
@@ -289,29 +291,8 @@ header label:hover{
         width: 80px;
         height: 80px;
     }
-    #menuImg{
-        width: 20%;
-        display: block;
-    }
-    div.headerPrincipalPage label{ 
-        display: block; 
-    }
-    .menuNav{  /*menu de opciones*/
-        position: absolute;
-        background-color: rgba(119, 186, 125, 0.8);
-        width: 40%;
-        margin-left: -75%;
-        transition: all 0.5s;
-    }
-    .menuNav ul{ 
-        flex-direction: column;
-        padding-left: 1em;
-    }
-    .inputSearchProfile{
-        flex-direction: row-reverse;
-        border-radius:0px 10px 10px 0px;
-        width:95%;
-    }
+    
+
     .searchButton, .profileButton{
         width: 50px;
         height: 40px;
@@ -322,13 +303,9 @@ header label:hover{
         margin: 10px 0px 10px 0px;
         border-radius:0px 10px 10px 0px;
     }
-    #check:checked ~ .menuNav{ /*despues del input check seleccionara toda la clase menu*/
-        margin: 0; /*checked: El usuario puede activar este estado marcando/seleccionando un elemento, o desactivarlo desmarcando/deseleccionando el elemento*/
-
-    }
 }
 /*Celulares*/
-@media (max-width: 414px){
+@media (max-width: 415px){
     .mainLabel{
         justify-content:center;
         align-items:center;
@@ -362,11 +339,11 @@ header label:hover{
         height: 80px;
     }
     .inputSearchProfile{
-        height: 22px;
+        height: 40px;
     }
     .searchButton, .profileButton, .logOutButton{
-        width: 20px;
-        height: 24px;
+        width: 40px;
+        height: 40px;
         border: solid  rgba(119, 186, 125, 0.8) 1px;
     }
     .inputSearchProfile{
@@ -382,11 +359,43 @@ header label:hover{
         margin: 20px 0px 10px 5px;
     }
     .publishPostButton, .likeButton{
-        width: 25px;
-        height: 20px;
-    }
-}
+        width: 30%;
+        height: 40px;
+        border: none;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
 
+}
+#menuImg{
+    width: 20%;
+    display: block;
+}
+div.headerPrincipalPage label{ 
+    display: block; 
+}
+.menuNav{  /*menu de opciones*/
+    position: absolute;
+    background-color: rgba(119, 186, 125, 0.8);
+    width: 40%;
+    height: 33%;
+    margin-left: -75%;
+    transition: all 0.5s;
+}
+.menuNav ul{ 
+    flex-direction: column;
+    padding-left: 1em;
+}
+.inputSearchProfile{
+    flex-direction: row-reverse;
+    border-radius:0px 10px 10px 0px;
+    width:95%;
+}
+#check:checked ~ .menuNav{ /*despues del input check seleccionara toda la clase menu*/
+    margin: 0; /*checked: El usuario puede activar este estado marcando/seleccionando un elemento, o desactivarlo desmarcando/deseleccionando el elemento*/
+
+}
+}
 /*fin cambios menu hamburguesa*/
 
 /* #searchIconBtn{

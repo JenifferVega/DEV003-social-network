@@ -69,7 +69,7 @@ export const Home = () => {
   const createAccount = document.createElement('button');
   createAccount.classList.add('createAccount');
   createAccount.setAttribute('id', 'createAccount');
-  createAccount.textContent = 'CreateAccount';
+  createAccount.textContent = 'Create Account';
 
   mainSignUp.appendChild(email);
   mainSignUp.appendChild(username);
